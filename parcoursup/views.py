@@ -5,7 +5,8 @@ from django.shortcuts import redirect
 from django.shortcuts import render
 from .models import Course
 
-
+def index(request):
+    return HttpResponse("Bonjour")
 
 def courses_list(request):
     courses = Course.objects.all()
